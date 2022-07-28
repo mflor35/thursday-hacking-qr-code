@@ -13,6 +13,12 @@ export class AppComponent {
 @ViewChild('action', { static: true }) action: NgxScannerQrcodeComponent | any;  title = 'msc-scan';
   public output: string | undefined;
   showCamera = false;
+  records =[
+    {
+        "caseid": "1428044",
+        "casenumber": "20CR004345",
+        "caption": "The People of the State of California vs. Mendoza-Ortiz, Edgar Fernando"
+    }];
 
   constructor(private http: HttpClient) {}
 

@@ -13,3 +13,20 @@
     SCAN
   </button>
 </div>
+<table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th>Case Id</th>
+      <th>Case Number</th>
+      <th>Caption</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record in records">
+      <th>{{record.caseId}}</th>
+      <th>{{record.caseNumber}}</th>
+      <th>{{record.caption}}</th>
+    </tr>
+  </tbody>
+</table>
+
