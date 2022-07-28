@@ -32,7 +32,7 @@ export class AppComponent {
       this.http.get<any>(body).subscribe(
         res => {
           console.log(res);
-          this.http.post<any>('https://test.armonbakhtar.repl.co/api/qr', res).subscribe(
+          this.http.post<any>('https://test.armonbakhtar.repl.co/api/qr', {caseId: res.data.id, caseNumber: res.data.caseNumber, caption: res.data.style}).subscribe(
           res => {
             console.log(res);
           },
